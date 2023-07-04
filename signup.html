@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/signup_script.js"></script>
+</head>
+<body id="BOX">
+    <h1>Sign Up</h1>
+    <form id="signup-form" onsubmit="handleSignUpFormSubmit(event)">
+        <div>
+            <label for="username">Enter Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email">Enter Email Id:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <br>
+        <div id="error-message"></div>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>

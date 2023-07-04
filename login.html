@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/login_script.js"></script>
+</head>
+<body id="Container">
+    <h1>The Mega Cart</h1>
+    <form id="login-form" onsubmit="handleLoginFormSubmit(event)">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div id="error-message"></div>
+        <button type="submit">Login</button>
+        <p>New User Sign Up here <a href="signup.html">Sign up</a></p>
+    </form>
+</body>
+</html>

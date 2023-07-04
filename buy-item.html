@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Item</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Buy Item Page</h1>
+    <div id="item-info"></div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const item = urlParams.get('item');
+
+            const itemInfo = document.getElementById('item-info');
+
+            if (item === 'clothing') {
+                itemInfo.innerHTML = '<p>Item: Dress</p><p>Cost: Rs. 2000</p><p>Delivery: 4-5 days</p>';
+            } else if (item === 'health') {
+                itemInfo.innerHTML = '<p>Item: Beauty & Health Product</p><p>Cost: Rs. 1000</p><p>Delivery: 2-3 days</p>';
+            } else if (item === 'footwear') {
+                itemInfo.innerHTML = '<p>Item: Footwear</p><p>Cost: Rs. 200</p><p>Delivery: 7-8 days</p>';
+            } else if (item === 'school') {
+                itemInfo.innerHTML = '<p>Item: School Bags</p><p>Cost: Rs. 3500</p><p>Delivery: 2-3 days</p>';
+            }
+        });
+    </script>
+    <div id="final">
+        <button type="logout">Logout</button>
+    </div>
+    
+</body>
+</html>
